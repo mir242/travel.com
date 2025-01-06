@@ -31,8 +31,38 @@ body {
     @apply border-green-50 bg-green-50 px-8 py-5 text-white;
   }
 
+
+  .text-custom {
+    font-size: 16px;
+    color: #0011368f;
+    max-width: 900px;
+    padding: 10px;
+    margin-right: 20px; /* فاصله ا* نوار رنگی در سمت چپ */
+   }
+  
+  
+  
+  .text-gradient {
+    background: linear-gradient(90deg, #004e60, #01abe3); /* گرادیان رنگ از آبی روشن به آبی تیره */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .text-gradient:hover {
+    transform: scale(1.1);
+  }
+  
+
+
+.btn_login_blue{
+
+  @apply  bg-blue-600 px-8 py-4 text-white  rounded-full shadow-md hover:bg-blue-900 hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-opacity-75
+}
+
   .btn_dark_green {
-    @apply bg-green-90 px-8 py-4 text-white transition-all hover:bg-black;
+    @apply bg-blue-800 px-8 py-4 text-white transition-all hover:bg-blue-500;
   }
 
   .btn_dark_green_outline {
@@ -139,7 +169,7 @@ body {
 
   /* Hero */
   .hero-map {
-    @apply absolute left-0 top-0 h-screen w-screen bg-pattern-2 bg-cover bg-center md:-left-28 xl:-top-60;
+    @apply absolute left-0 top-0 h-screen w-screen bg-pattern-2 bg-cover bg-center md:-left-28 xl:-top-40;
   }
 
   /* Camp */

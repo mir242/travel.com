@@ -1,10 +1,11 @@
 // NAVIGATION
 export const NAV_LINKS = [
-    { href: "/", key: "home", label: "خانه" },
-    { href: "/", key: "how_hilink_work", label: "سفر بوک چگونه کار میکند؟" },
+    { href: "/Home", key: "home", label: "خانه" },
+    { href: "/", key: "travels", label: " تورهای داخلی" },
+    { href: "/", key: "camps", label: "  بهترین کمپ هامون" },
     { href: "/", key: "services", label: "سرویس ها" },
     { href: "/", key: "pricing ", label: "قیمت ها " },
-    { href: "/", key: "contact_us", label: "تماس به ما" },
+    { href: "/", key: "contact_us", label: "تماس با ما" },
   ];
   
   // CAMP SECTION
