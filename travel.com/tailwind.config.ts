@@ -30,8 +30,11 @@ module.exports = {
         },
       },
       backgroundImage: {
-        "bg-img-1": "url('/img-1.png')",
-        "bg-img-2": "url('/img-2.png')",
+        "bg-img-1": "url('/swiper (1).webp')",
+        "bg-img-2": "url('/swiper (2).webp')",
+        "bg-img-3": "url('/swiper (3).webp')",
+        "bg-img-4": "url('/swiper (4).webp')",
+        "bg-img-5": "url('/swiper (1).jpg')",
         "feature-bg": "url('/feature-bg.png')",
         pattern: "url('/pattern.png')",
         "pattern-2": "url('/pattern-bg.png')",

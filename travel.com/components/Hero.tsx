@@ -4,19 +4,19 @@ import Button from "./Button";
 
 const Hero = () => {
   return (
-    <section className="max-container padding-container flex flex-col gap-20 pb-32 py-10 md:gap-28 lg:py-20 xl:flex-row">
-      <div className="hero-map right-[10px]" />
+    <section className="max-container padding-container flex flex-col gap-10 pb-16 py-5 md:gap-14 lg:py-10 xl:flex-row">
+      <div className="hero-map right-[2vw]" />
       <div className="z-20 flex flex-1 flex-col xl:w-20 ">
         <Image
           src="/Vector 1.png"
           alt="background"
-          width={900}
+          width={600}
           height={900}
-          className="absolute top-[60px] right-[30px]  "
+          className="absolute top-[10vh] right-[10vw] "
         />
       </div>
-      <div className="flex flex-col items-center xl:items-start right-[90px] mt-0 relative z-20 text-center xl:text-left  ">
-        <h1 className="animate-bounce bold-40 lg:bold-52 text-gradient xl:animate-none ">
+      <div className="flex flex-col items-center xl:items-start right-[5vw] mt-0 relative z-20 text-center xl:text-left">
+        <h1 className="animate-bounce bold-40 lg:bold-52 text-gradient xl:animate-none">
           تجربه‌های بی‌نظیر گردشگری در انتظار شماست
         </h1>
         <p className="text-custom mt-4">
@@ -26,25 +26,23 @@ const Hero = () => {
         </p>
       </div>
       <div className="my-11 flex flex-wrap gap-5 justify-center xl:justify-start">
-  <div className="flex items-center opacity-50 hover:opacity-100 gap-2">
-    {Array(5)
-      .fill(1)
-      .map((_, index) => (
-        <Image
-          src="/staricon.png"
-          alt="star"
-          key={index}
-          width={20}
-          height={20}
-          className="w-auto h-auto"
-        />
-      ))}
-    <p className="bold-16 lg:bold-20 text-blue-900">10k</p>
-    <span className="text-sm opacity-75"> رضایت کاربران</span>
-  </div>
-</div>
-
-
+        <div className="flex items-center opacity-50 hover:opacity-100 gap-2">
+          {Array(5)
+            .fill(1)
+            .map((_, index) => (
+              <Image
+                src="/staricon.png"
+                alt="star"
+                key={index}
+                width={12}
+                height={12}
+                className="w-auto h-auto"
+              />
+            ))}
+          <p className="bold-16 lg:bold-20 text-blue-900">10k</p>
+          <span className="text-sm opacity-75"> رضایت کاربران</span>
+        </div>
+      </div>
       <div className="relative flex flex-1 items-start justify-center xl:justify-start">
         <div className="relative z-20 flex w-full max-w-[268px] flex-col gap-8 rounded-3xl bg-green-90 px-7 py-8">
           <div className="flex flex-col">
