@@ -54,7 +54,7 @@ export const NAV_LINKS = [
     {
       title: "بیشتر بدانید",
       links: [
-        "درباره سفر بوک",
+        "درباره سفر دات کام",
         "بیانیه های مطبوعاتی",
         "محیط",
         "شغل ها",
@@ -64,15 +64,15 @@ export const NAV_LINKS = [
     },
     {
       title: "جامعه ی ما",
-      links: ["سفر بوک شیراز", "سفر بوک تهران", "سفر بوک ایران"],
+      links: ["سفر بوک زنجان", "سفر بوک تهران", "سفر بوک ایران"],
     },
   ];
   
   export const FOOTER_CONTACT_INFO = {
     title: "تماس با ما",
     links: [
-      { label: "مدیریت", value: "909 230 12 02" },
-      { label: "ایمیل", value: "safarbook@akinthil.com" },
+      { label: "مدیریت", value: "09050257043" },
+      { label: "ایمیل", value: "travel-com@gmail.com" },
     ],
   };
   
@@ -81,8 +81,7 @@ export const NAV_LINKS = [
     links: [
       "/facebook.svg",
       "/instagram.svg",
-      "/twitter.svg",
       "/youtube.svg",
-      "/wordpress.svg",
+      
     ],
   };

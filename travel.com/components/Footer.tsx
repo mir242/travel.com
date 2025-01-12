@@ -10,10 +10,10 @@ const Footer = () => {
         <div className="flex flex-col items-start justify-center gap-[10%] md:flex-row">
           <Link href="/" className="mb-10">
             <Image
-              src="/safar-book-logo.png"
+              src="/logo1.png"
               alt="logo"
-              width={74}
-              height={29}
+              width={94}
+              height={49}
             />
           </Link>
 
@@ -62,7 +62,7 @@ const Footer = () => {
         </div>
         <div className="border bg-gray-20" />
         <p className="regular-14 w-full text-center text-gray-30">
-          2024 Safar-Book | All rights reserved
+          2024 travel.com | All rights reserved
         </p>
       </div>
     </footer>

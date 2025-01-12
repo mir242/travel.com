@@ -32,8 +32,8 @@ const Guide = () => {
           <Image
             src="/meter.png"
             alt="meter"
-            width={160}
-            height={158}
+            width={140}
+            height={118}
             className="h-full w-auto"
           />
           <div className="flexBetween flex-col">
