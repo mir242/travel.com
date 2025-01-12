@@ -1,63 +1,51 @@
-import { PEOPLE_URL } from "@/constants";
-import Image from "next/image";
 import React from "react";
+import { TravelSite } from "./Travel";
 
-interface travelProps {
-  backGroundImage: String;
-  title: String;
-  subtitle: String;
-  peoplejoined: String;
-}
-
-const TravelSite = ({
-  backGroundImage,
-  title,
-  subtitle,
-  peoplejoined,
-}: travelProps) => {
+const Camp = () => {
   return (
-    <div
-      className={`h-3/4 w-full mt-10 sm:mt-20 min-w-[300px] sm:min-w-[900px] ${backGroundImage} bg-cover bg-no-repeat lg:rounded-r-5xl  2xl:rounded-5xl`}
-    >
-      <div className="flex h-full flex-col items-start justify-between p-4 sm:p-6 lg:px-20 lg:py-10 bg-gradient-to-t from-black to-transparent">
-        <div className="flex items-center gap-2 sm:gap-4">
-          <div className="rounded-full bg-blue-500 p-3 sm:p-4 opacity-80 hover:opacity-100">
-            <Image
-              src="/logo1.png"
-              alt="logo"
-              width={48}
-              height={48}
-              className="rounded-2xl object-cover object-top"
-            />
-          </div>
-          <span className="font-mono text-white opacity-70">travel.com</span>
-          <div className="flex flex-col gap-1">
-            <h4 className="border-l-4 pl-2 text-white text-lg sm:text-xl font-semibold animate-pulse">
-              {title}
-            </h4>
-            <p className="text-gray-20 text-sm sm:text-base">{subtitle}</p>
-          </div>
-        </div>
-        <div className="flex items-center gap-4 sm:gap-6">
-          <span className="flex -space-x-3 sm:-space-x-4 overflow-hidden">
-            {PEOPLE_URL.map((url) => (
-              <Image
-                src={url}
-                alt="person"
-                key={url}
-                width={42}
-                height={42}
-                className="inline-block h-10 w-10 rounded-full border-2 border-white object-cover object-top"
+    <section className="py-10 bg-gray-100">
+      <div className="max-w-screen-xl mx-auto h-full px-4">
+        <h1 className="text-center text-3xl font-bold mb-8">
+          کمپ‌های جذاب سفر
+        </h1>
+        <div className="flex flex-col gap-8 ">
+          {campData.map((camp, index) => (
+            <div key={index} className="h-[400px] relative overflow-hidden rounded-lg">
+              <div className="absolute inset-0 bg-opacity-50"></div>
+              <TravelSite
+                backGroundImage={camp.backGroundImage}
+                title={camp.title}
+                subtitle={camp.subtitle}
+                peoplejoined={camp.peoplejoined}
               />
-            ))}
-          </span>
-          <p className="text-gray-20 font-bold text-sm sm:text-lg">
-            {peoplejoined}
-          </p>
+              <div className="absolute bottom-4 left-4 right-4 bg-white bg-opacity-75 rounded p-4">
+                <p className="text-sm text-gray-700">
+                  {camp.description}
+                </p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
-export default TravelSite;
+const campData = [
+  {
+    backGroundImage: "bg-bg-img-6",
+    title: "Protocol Tornado Camp",
+    subtitle: "کمپ 7 روزه کویر یزد",
+    peoplejoined: "+120 نفر",
+    description: "کشف شگفتی‌های کویر یزد در یک کمپ ۷ روزه پر از ماجراجویی و هیجان."
+  },
+  {
+    backGroundImage: "bg-bg-img-7",
+    title: "Protocol Tornado Camp",
+    subtitle: "اکو کمپ دورنا -مشگین",
+    peoplejoined: "+150 نفر",
+    description: "لذت بردن از مناظر زیبا و طبیعت بکر مشگین در اکو کمپ دورنا."
+  }
+];
+
+export default Camp;

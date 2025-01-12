@@ -36,7 +36,7 @@ module.exports = {
         "bg-img-4": "url('/swiper (4).webp')",
         "bg-img-5": "url('/swiper (1).jpg')",
         "bg-img-6": "url('/camp1.jpg')",
-        "bg-img-7": "url('/camp2.jpg ')",
+        "bg-img-7": "url('/camp2.webp')",
         "feature-bg": "url('/feature-bg.png')",
         pattern: "url('/pattern.png')",
         "pattern-2": "url('/pattern-bg.png')",
