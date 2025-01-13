@@ -1,4 +1,3 @@
-
 # Travel.com
 
 A modern travel booking website built with Next.js, TypeScript, and Tailwind CSS.
@@ -22,3 +21,8 @@ Clone the repository and install the dependencies:
 git clone https://github.com/yourusername/travel.com.git
 cd travel.com
 npm install
+
+## Usage
+
+```bash
+npm run dev
