@@ -16,6 +16,10 @@ Travel.com is a comprehensive platform for booking travel accommodations and act
 ## Installation
 
 Clone the repository and install the dependencies:
+And here you can use the published link of the same project in vercel: 
+https://travelcom2.vercel.app/
+
+
 
 ```bash
 git clone https://github.com/yourusername/travel.com.git
